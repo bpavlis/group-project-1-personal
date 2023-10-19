@@ -1,0 +1,249 @@
+:root {
+  --lightgrn: rgb(184, 208, 188);
+}
+
+body,
+html {
+  font-family: 'Tilt Neon', sans-serif;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/016/128/944/non_2x/superbowl-american-football-stadium-background-in-night-sky-free-vector.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-score {
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+}
+
+.h2-text {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-family: 'Tilt Neon', sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--lightgrn);
+  padding: 7px;
+}
+
+.content-score {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  margin: 2px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+#return-button,
+#clear-scores,
+#save-button {
+  width: 100%;
+  border: 3px solid #28a745;
+  margin: 1px;
+}
+
+.index-score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 400px;
+}
+
+#scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  font-family: 'Tilt Neon', sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--lightgrn);
+  padding: 7px;
+
+}
+
+.score-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  font-family: 'Tilt Neon', sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--lightgrn);
+  padding: 7px;
+}
+
+#h1-header {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  display: flex;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: light;
+  color: var(--lightgrn);
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#cardOneBtn,
+#cardTwoBtn {
+  border: 3px solid #28a745;
+}
+
+#cards-container {
+  place-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-title {
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.card {
+  font-family: 'Tilt Neon', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--lightgrn);
+
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.question {
+  text-align: center;
+  padding: 10px;
+  margin-top: 135px;
+  margin-bottom: 50px;
+  /* margin-left: 37%; */
+  font-family: 'Tilt Neon', sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--lightgrn);
+  width: 350px;
+}
+
+#scoreboard {
+  margin-top: 200px;
+}
+
+.score-wrapper {
+  margin-top: 200px;
+}
+
+
+/* floating button on landing page */
+
+span a {
+  font-size: 18px;
+  color: #cccccc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  margin-top: 300px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.suppoprt-me {
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 20vw;
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 9;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
