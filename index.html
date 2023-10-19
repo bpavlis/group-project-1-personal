@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher-Lower Game: NFL Salaries</title>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Tilt+Neon&family=Zen+Loop&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <title>Higher-Lower Game: NFL Salaries</title>
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="./index.html">Football Higher or Lower Game</a>
@@ -27,55 +28,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./landing.html">Home</a>
+            <a class="nav-link" href="./game.html">Game</a>
           </li>
 
         </ul>
       </div>
     </div>
   </nav>
-  <div id="content-container">
-    <div class="question-container">
-      <div class="question">
-        <h6>Which player has the higher salary?</h6>
-      </div>
-    </div>
-    <div id="cards-container">
-      <div id="cardOne" class="card text-white bg-dark border-success mb-3" style="width: 20rem;">
-        <img id="cardOneImg" class="card-img-top" src="https://pngfre.com/wp-content/uploads/American-Football-6.png"
-          alt="placeholder image of a football, otherwise, a generated image of a random NFL player.">
-        <div class="card-body">
-          <h5 id="name1" class="card-title">Player Name</h5>
-          <p id="value1" class="card-text">Player Salary</p>
-          <a id="cardOneBtn" href="#" class="btn btn-success">This Player!</a>
-        </div>
-      </div>
 
-      <div id="cardTwo" class="card text-white bg-dark border-success mb-3" style="width: 20rem;">
-        <img id="cardTwoImg" class="card-img-top" src="https://pngfre.com/wp-content/uploads/American-Football-6.png"
-          alt="placeholder image of a football, otherwise, a generated image of a random NFL player.">
-        <div class="card-body">
-          <h5 id="name2" class="card-title">Player Name</h5>
-          <p id="value2" class="card-text">Salary: $______?
-          </p>
-          <a id="cardTwoBtn" href="#" class="btn btn-success">This Player!</a>
-        </div>
-      </div>
+  <!-- floating button -->
+  <div class="container">
+    <div class="avatar">
+      <a href="./game.html">
+        <img src="https://pngfre.com/wp-content/uploads/American-Football-6.png" alt="Floating Football" />
+      </a>
+    </div>
+    <div class="h2-text">
+      <h6 class="justify-content-center">Click the football to begin!</h6>
     </div>
   </div>
 
-  <div class="index-score">
-    <div id="scoreboard" class="hide-score">
-      <h2 id="score"></h2>
-      <div id="initials"></div>
-      <button id="save-button" class="btn-success">Save Score</button>
-    </div>
-  </div>
-
-
-  <script src="./assets/js/script.js"></script>
-
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 
 </html>
