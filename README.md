@@ -18,4 +18,4 @@ This data is pulled from [API-AMERICAN-FOOTBALL (1.4.7)](https://api-sports.io/d
 ## Links
 [GitHub](https://github.com/bpavlis/group-project-1)
 
-[GitHub Pages](https://bpavlis.github.io/group-project-1/)
+[GitHub Pages](https://bpavlis.github.io/group-project-1-personal/)
